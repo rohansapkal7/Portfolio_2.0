@@ -3,7 +3,7 @@ const projects_data = [
         project_title : 'Chat Gpt 1',
         project_subtitle : 'Your personal A.I. Assistant',
         project_icons : ['game.png','cd.png'],
-        project_desc : 'dfd fdfdfd dsfsdfdsfsd fsdfsdfdsf ds fsdfdsfds f d gdfgfd g dfgdfgdf ',
+        project_desc : 'dfdd fdfdfd dsfsdfdsfsd fsdfsdfdsf ds fsdfdsfds f d gdfgfd g dfgdfgdf ',
         tech_used : ['React js','Mongo DB', 'Node js']
     },
 
