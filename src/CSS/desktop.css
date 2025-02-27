@@ -289,7 +289,63 @@ body{
     background-color: var(--highlightColor);
     border: var(--border);
     border-radius: var(--borderRadius);
+    padding: 3.5% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.exp-holder{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    height: 65%;
+    width: 100%;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.exp{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.exp-role{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+.exp-button{
+    /* background-color: aqua; */
+    position: relative;
+    height: 20%;
+    width: 60%;
+    border-radius: 100vw;
+    border: 3px solid black;
+
+}
+
+.l1,.l2,.l3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -55%);
+}
+
+.l2,.l3{
+    opacity: 0;
+}
+
+.experience-container:hover .l1{
+    opacity: 0;
+}
+
+.experience-container:hover .l2{
+    opacity: 1;
 }
 
 .extras-container{
