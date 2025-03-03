@@ -12,7 +12,7 @@ function Project_card({data}) {
 
         <div className="project-content">
           <p className="project-subt">
-
+            {data.project_subtitle}
           </p>
           <p className="project-desc">
 
