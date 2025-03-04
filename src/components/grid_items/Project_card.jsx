@@ -4,7 +4,7 @@ function Project_card({data}) {
   return (
     <div className='project-card-box'>
         <div className="project-header">
-          <p className="project-title">{data.project_title}</p>
+          <p className="project-title" id='PT'>{data.project_title}</p>
           <div className="projects-icons">
 
           </div>

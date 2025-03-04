@@ -298,12 +298,14 @@ body{
 
 .exp-holder{
     /* background-color: red; */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
     display: flex;
     justify-content: space-between;
     height: 65%;
     width: 100%;
-    overflow-y: hidden;
-    scrollbar-width: none;
+    overflow-x: hidden;
+    
 }
 
 .exp{
@@ -311,7 +313,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    scroll-snap-align: start;
 }
 
 .exp-role{
@@ -319,34 +321,6 @@ body{
     font-weight: 700;
 }
 
-.exp-button{
-    /* background-color: aqua; */
-    position: relative;
-    height: 20%;
-    width: 60%;
-    border-radius: 100vw;
-    border: 3px solid black;
-
-}
-
-.l1,.l2,.l3{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -55%);
-}
-
-.l2,.l3{
-    opacity: 0;
-}
-
-.experience-container:hover .l1{
-    opacity: 0;
-}
-
-.experience-container:hover .l2{
-    opacity: 1;
-}
 
 .extras-container{
     flex-grow: 1;
