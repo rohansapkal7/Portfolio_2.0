@@ -4,7 +4,7 @@ import Project_card from "./Project_card";
 
 export default function Project_tab (){
     const total_projects = projects_data.length
-    const atom = {project_tittle:"Pokemon"}
+    
     return(
         <div className="project-tab">
             <div className="project-tab-header">

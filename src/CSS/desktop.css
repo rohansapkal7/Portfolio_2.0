@@ -68,6 +68,10 @@ body{
     padding: 0 8%;
 }
 
+.intro-section:hover{
+    background-color: rgb(255, 250, 149)
+}
+
 .username-holder{
     /* background-color: red; */
     display: flex;
@@ -321,6 +325,19 @@ body{
     font-weight: 700;
 }
 
+.experience-container button{
+    all: unset;
+    border: 3px solid black;
+    width: 50%;
+    text-align: center;
+    height: 17%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.experience-container:hover{
+    background-color: rgb(255, 197, 149);
+}
 
 .extras-container{
     flex-grow: 1;

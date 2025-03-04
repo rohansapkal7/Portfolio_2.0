@@ -6,25 +6,7 @@ const experience_data = [
         duration: "Sept. 2024 - Feb. 2025"
     },
     {
-        role: "Gen AI Development, Intern 1",
-        company: "Phoenixgen Systems Pvt. Ltd.",
-        mode: "Remote",
-        duration: "Dec. 2023 - June. 2024"
-    },
-    {
-        role: "Gen AI Development, Intern 2",
-        company: "Phoenixgen Systems Pvt. Ltd.",
-        mode: "Remote",
-        duration: "Dec. 2023 - June. 2024"
-    },
-    {
-        role: "Gen AI Development, Intern 3",
-        company: "Phoenixgen Systems Pvt. Ltd.",
-        mode: "Remote",
-        duration: "Dec. 2023 - June. 2024"
-    },
-    {
-        role: "Gen AI Development, Intern 4",
+        role: "Gen AI Development, Intern",
         company: "Phoenixgen Systems Pvt. Ltd.",
         mode: "Remote",
         duration: "Dec. 2023 - June. 2024"

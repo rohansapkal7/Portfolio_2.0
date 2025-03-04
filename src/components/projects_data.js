@@ -1,7 +1,7 @@
 const projects_data = [
     {
-        project_title : 'Chat Gpt 1',
-        project_subtitle : 'Your personal A.I. Assistant',
+        project_title : 'WiseCode.ai',
+        project_subtitle : 'Ai powered mentor & code reviewer',
         project_icons : ['game.png','cd.png'],
         project_desc : 'project1 fdfdfd dsfsdfdsfsd fsdfsdfdsf ds fsdfdsfds f d gdfgfd g dfgdfgdf ',
         tech_used : ['React js','Mongo DB', 'Node js']

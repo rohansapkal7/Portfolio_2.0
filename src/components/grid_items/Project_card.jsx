@@ -6,7 +6,13 @@ function Project_card({data}) {
         <div className="project-header">
           <p className="project-title" id='PT'>{data.project_title}</p>
           <div className="projects-icons">
-
+            {
+              data.project_icons.map((e)=>{
+                return(
+                  <p>{e}</p>
+                )
+              })
+            }
           </div>
         </div>
 

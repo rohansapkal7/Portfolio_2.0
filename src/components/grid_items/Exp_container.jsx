@@ -1,6 +1,6 @@
 import experience_data from "../experience_data"
 import Experience from "./Experience"
-import { useState,useRef } from "react"
+import { useState,useRef, useEffect } from "react"
 
 export default function Exp_container() {
     
@@ -10,23 +10,29 @@ export default function Exp_container() {
     const [count, setCount] = useState(0);
     const [buttonText, setButtonText] = useState('Experience');
 
-    function handleExpCard(){
-        setCount(prev=>prev+1)
-        console.log(count);
+    function handleClick(){
+       if(scrollToLeft){
+        expHolderRef.current.scrollLeft += 300
+       }else{
+        expHolderRef.current.scrollLeft -= 300
+       }
+
+       var index = count;
+       index++;
+
+       if(index===experience_data.length-1){
+        setCount(0);
         
-        if(count===experience_data.length-2){
-            setCount(0);
-            setScrollToLeft(prev=> !prev);
-            console.log(scrollToLeft);    
-        }
-        
-        
-        
-        if(scrollToLeft){
-            expHolderRef.current.scrollLeft += 300
+        if(buttonText==='Previous'){
+            setButtonText('Next')
         }else{
-            expHolderRef.current.scrollLeft -= 300
+            setButtonText('Previous')
         }
+
+        setScrollToLeft(prev=>!prev)
+       }else{
+        setCount(index)
+       }
     }
 
     return(
@@ -43,7 +49,7 @@ export default function Exp_container() {
                     })
                 }
             </div>
-            <button onClick={handleExpCard}>{buttonText}</button>
+            <button onClick={handleClick}>{buttonText}</button>
         </div>
     )
 }
