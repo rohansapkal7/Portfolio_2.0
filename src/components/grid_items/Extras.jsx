@@ -1,7 +1,8 @@
 export default function Extras() {
     return(
         <div className="extras-container">
-            <p>hello</p>
+            <p>hello to Extras</p>
+            <div className="main">Content</div>
         </div>
     )
 }
