@@ -1,9 +1,21 @@
+import { useRef } from "react";
+
 import Social_links from "./Social_links";
 import projects_data from "../projects_data";
 import Project_card from "./Project_card";
 
 export default function Project_tab (){
     const total_projects = projects_data.length
+
+    const projectContainerRef = useRef(null)
+
+    function handleNext(){
+        projectContainerRef.current.scrollLeft += 300
+    }
+
+    function handlePrev(){
+        projectContainerRef.current.scrollLeft -= 300
+    }
     
     return(
         <div className="project-tab">
@@ -19,7 +31,9 @@ export default function Project_tab (){
             
             <div className="project-wrapper">
                 
-                <div className="project-container">
+                <div className="project-container"
+                ref={projectContainerRef}
+                >
                     {
                         projects_data.map((a)=>{
                             return(
@@ -29,7 +43,14 @@ export default function Project_tab (){
                     }
                 </div>
 
-                <button className="next-project">Next</button>
+                <div className="project-btn-container">
+                    <button className="next-project" onClick={handleNext}>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                    <button className="prev-project" onClick={handlePrev}>
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                </div>
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ function Project_card({data}) {
             {
               data.project_icons.map((e)=>{
                 return(
-                  <p>{e}</p>
+                  <img src={'/icons/'+e} alt="badge-icon" />
                 )
               })
             }
@@ -21,11 +21,14 @@ function Project_card({data}) {
             {data.project_subtitle}
           </p>
           <p className="project-desc">
-
+            {data.project_desc}
           </p>
         </div>
 
-        <p className="project-techs"></p>
+        <div className="project-footer">
+          <p>{data.tech_used}</p>
+          <button>{'</>'}</button>
+        </div>
     </div>
   )
 }

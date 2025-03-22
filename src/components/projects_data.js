@@ -2,9 +2,9 @@ const projects_data = [
     {
         project_title : 'WiseCode.ai',
         project_subtitle : 'Ai powered mentor & code reviewer',
-        project_icons : ['game.png','cd.png'],
+        project_icons : ['ai-brain-icon.png','web-app-icon.png'],
         project_desc : 'project1 fdfdfd dsfsdfdsfsd fsdfsdfdsf ds fsdfdsfds f d gdfgfd g dfgdfgdf ',
-        tech_used : ['React js','Mongo DB', 'Node js']
+        tech_used : 'React, Mongo DB, Express.js'
     },
 
     {
@@ -12,7 +12,7 @@ const projects_data = [
         project_subtitle : 'Your personal A.I. Assistant',
         project_icons : ['game.png','cd.png'],
         project_desc : 'dfd fdfdfd dsfsdfdsfsd fsdfsdfdsf ds fsdfdsfds f d gdfgfd g dfgdfgdf ',
-        tech_used : ['React js','Mongo DB', 'Node js']
+        tech_used : 'React, Mongo DB, Express.js'
     },
 
     {
@@ -20,7 +20,7 @@ const projects_data = [
         project_subtitle : 'Your personal A.I. Assistant',
         project_icons : ['game.png','cd.png'],
         project_desc : 'dfd fdfdfd dsfsdfdsfsd fsdfsdfdsf ds fsdfdsfds f d gdfgfd g dfgdfgdf ',
-        tech_used : ['React js','Mongo DB', 'Node js']
+        tech_used : 'React, Mongo DB, Express.js'
     },
 
     {
@@ -28,7 +28,7 @@ const projects_data = [
         project_subtitle : 'Your personal A.I. Assistant',
         project_icons : ['game.png','cd.png'],
         project_desc : 'dfd fdfdfd dsfsdfdsfsd fsdfsdfdsf ds fsdfdsfds f d gdfgfd g dfgdfgdf ',
-        tech_used : ['React js','Mongo DB', 'Node js']
+        tech_used : 'React, Mongo DB, Express.js'
     },
 
     {
@@ -36,7 +36,7 @@ const projects_data = [
         project_subtitle : 'Your personal A.I. Assistant',
         project_icons : ['game.png','cd.png'],
         project_desc : 'dfd fdfdfd dsfsdfdsfsd fsdfsdfdsf ds fsdfdsfds f d gdfgfd g dfgdfgdf ',
-        tech_used : ['React js','Mongo DB', 'Node js']
+        tech_used : 'React, Mongo DB, Express.js'
     }
 
 ]

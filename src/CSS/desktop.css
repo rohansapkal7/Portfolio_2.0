@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-weight: 520;
     font-size: 1.1vw;
     font-optical-sizing: auto;
     cursor: url('/icons/click.png'),auto;
@@ -32,8 +32,8 @@ body{
     display: flex;
     justify-content: center;
     background-image:  linear-gradient(var(--bgGridLineColor) 1.3px, transparent 1.3px), linear-gradient(to right, var(--bgGridLineColor) 1.3px, whitesmoke 1.3px);
-    background-size: 35px 35px;
-    position: relative;
+    background-size: 40px 40px; 
+    position: relative;    
     /* background-color: wh; */
 }
 
@@ -87,7 +87,7 @@ body{
 
 .fa-circle-check{
     font-size: 90%;
-    color: blue;
+    color: rgb(81, 0, 255);
     margin-left: 6px;
 }
 
@@ -200,7 +200,7 @@ body{
 
 .total-projects p{
     font-size: 1.3vw;
-    font-weight: 650;
+    font-weight: 600;
 }
 
 .total-projects i{
@@ -223,32 +223,135 @@ body{
     /* background-color: var(--highlightColor); */
     gap: var(--space);
     justify-content: space-between;
+    
 }
 
 .project-container{
     width: 90%;
     height: 100%;
-    background-color: var(--highlightColor);
+    /* background-color: var(--highlightColor); */
     /* border: var(--border); */
     /* border-radius: var(--borderRadius); */
     display: flex;
     gap: var(--space);
-    overflow-y: hidden;
+    overflow: hidden;
     scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
 
 .project-card-box{
-    min-width: calc(50% - 5px);
+    min-width: calc(50% - 6px);
     height: 100%;
     border: var(--border);
     border-radius: var(--borderRadius);
+    padding: 0 4%;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    background-color: var(--highlightColor);
+}
+
+.project-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    margin-top: 5%;
+    /* background-color: blue; */
+}
+
+.project-title{
+    font-size: 1.5vw;
+    font-weight: 600;
+    
+}
+
+.projects-icons{
+    display: flex;
+    /* background-color: red; */
+    height: 100%;
+    gap: 5px;
+}
+
+.projects-icons img{
+    height: 2.5vw;
+}
+
+.project-content{
+    width: 100%;
+}
+
+.project-subt{
+    margin-top: 5%;
+}
+
+.project-desc{
+    font-size: 0.9vw;
+    margin-top: 5%;
+}
+
+.project-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 0 6% 0;
+}
+
+.project-footer p{
+    font-size: 0.9vw;
+    width: 70%;
+}
+
+.project-action{
+    display: flex;
+    gap: 2px;
+}
+
+.project-footer button{
+    all: unset;
+    text-align: center;
+    border: 3px solid black;
+    color: black;
+    padding: 10px 15px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.project-footer button:hover{
+    color: white;
+    background-color: black;
+}
+
+.project-btn-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space);
+}
+
+
+
+.next-project,.prev-project{
+    all: unset;
+    border: var(--border);
+    width: 92%;
+    text-align: center;
+    border-radius: var(--borderRadius);
+    background-color: var(--highlightColor);
 }
 
 .next-project{
+    height: 60%;
+}
+
+.prev-project{
     flex: 1;
-    background-color: var(--highlightColor);
-    border: var(--border);
-    border-radius: var(--borderRadius);
+}
+
+.fa-chevron-right,.fa-chevron-left{
+    font-size: 1.5vw;
 }
 
 .exp-tab{
@@ -327,7 +430,7 @@ body{
 
 .experience-container button{
     all: unset;
-    border: 3px solid black;
+    border: var(--border);
     width: 50%;
     text-align: center;
     height: 17%;
